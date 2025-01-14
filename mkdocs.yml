@@ -1,68 +1,72 @@
 site_name: Panduan Aplikasi Manajemen Pegawai
+# site_url: https://mydomain.org/mysite
 theme:
   name: material
   palette:
-   
+
     # Palette toggle for light mode
     - scheme: default
-      pimary: amber
-      accent: amber
+      primary: red
+      accent: red
       toggle:
-        icon: material/brightness-7
+        icon: material/lightbulb
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - scheme: slate
-      primary: amber
-      accent: amber
+      primary: red
+      accent: red
       toggle:
-        icon: material/brightness-4
+        icon: material/lightbulb-outline
         name: Switch to light mode
-
-        # mengatur font 
+  
+  # Mengatur font
   font:
-    text: Open sans
-    code: JetBrainse mono
- 
-    #icon
-      logo: 
-      favicon: 
+    text: Open Sans
+    code: JetBrains Mono
 
-      icon:
-      admonotion:
-        note: font awesome/solid/note.sticky
-        abstrack: font awesome/solid/book
-        info: font awesome/solid/circle.info
-        tip: font awesome/solid/bullhorn
-        succese: font awesome/solid/check
-        question: font awesome/solid/circle-question
-        warning: font awesome/solid/triangle-axclamation
-        failur: font awesome/solid/bomb
-        danger: font awesome/solid/skull
-        bug: font awesome/solid/robot
-        example: font awesome/solid/flask
-        quote: font awesome/solid/quote.left
-       
-        features: 
-          # - navigation.fonter
-          # - navigation.
+  # icon:
+    # logo: material/book
+  favicon: images/closed-book.png
+  logo: images/closed-book.png
 
-          markdown_extensions:
-          - admonition
-          - pyadownx.details
-          - pyadownx.superfance
-          # fitur
-          - atr-list
-          # keyboard
-          - pyadownx.keys
-  - pymdownx.arithmatex:
-      generic: true
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
 
-      plugins:
-        - search
+  features:
+    # - navigation.footer
+    # - navigation.tabs
+  
 
-        # footer
-        copyright: made with by kelompok 2 | &copy; 2025
+plugins:
+  - search
 
-        extra:
-          generator: false 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  # Fitur
+  - attr_list
+  # Keyboard
+  - pymdownx.keys
+
+# Footer
+copyright: Made with al fachre| &copy; 2025
+
+extra:
+  generator: false
+  social: 
+    - icon: fontawesome/brands/github
+      link: https://github.com/alfachree
